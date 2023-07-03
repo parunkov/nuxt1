@@ -7,9 +7,13 @@ definePageMeta({
     return /^\d+$/.test(route.params.id);
   }
 })
+
+const user = await $fetch(`https://jsonplaceholder.typicode.com/users/${id}`).catch((error) => error.data);
 </script>
 <template>
   <section>
-    <h1>User {{ id }}</h1>
+    <h1>{{ user.name }}</h1>
+    <hr>
+    <h3>{{ user.email }}</h3>
   </section>
 </template>
