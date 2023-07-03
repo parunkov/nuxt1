@@ -1,8 +1,8 @@
 <script setup>
-let isAuth = useState('isAuth');
+const isAuth = useAuth();
 
 const onSubmit = () => {
-  isAuth = true;
+  isAuth.value = true;
   console.log(isAuth);
 }
 </script>

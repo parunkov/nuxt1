@@ -1,5 +1,5 @@
 <script setup>
-const isAuth = useState('isAuth');
+const isAuth = useAuth();
 console.log("🚀 ~ file: about.vue:3 ~ isAuth:", isAuth)
 </script>
 <template>
