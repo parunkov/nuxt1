@@ -6,5 +6,5 @@ export default defineNuxtConfig({
       title: 'Nuxt app',
       charset: 'utf-8',
     }
-  }
+  },
 })
