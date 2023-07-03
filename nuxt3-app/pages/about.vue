@@ -1,3 +1,7 @@
+<script setup>
+const isAuth = useState('isAuth');
+console.log("🚀 ~ file: about.vue:3 ~ isAuth:", isAuth)
+</script>
 <template>
   <div>
     <h1>Вторая страница</h1>

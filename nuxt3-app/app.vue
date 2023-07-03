@@ -1,5 +1,13 @@
+<script setup>
+import "@/node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+// const isToken = useState("isToken", () => false);
+// console.log(isToken);
+</script>
+
 <template>
   <div>
+    <NuxtLoadingIndicator />
     <MainNavbar />
     <main>
       <div class="container">
@@ -8,13 +16,16 @@
     </main>
   </div>
 </template>
-<script>
+<!-- <script>
 import '@/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import MainNavbar from '@/components/MainNavbar.vue';
 export default {
-  components: {MainNavbar}
+  components: {MainNavbar},
+  setup() {
+    const isToken = useState('isToken', () => false);
+  }
 }
-</script>
+</script> -->
 <style>
 /* @import url("@/node_modules/bootstrap/dist/css/bootstrap.min.css"); */
 </style>

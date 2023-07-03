@@ -1,3 +1,12 @@
+<script setup>
+// const authVisible = ref(true);
+let isAuth = useState('isAuth');
+const onLogoutClick = () => {
+  console.log(5555);
+  isAuth = false;
+  console.log(isAuth);
+}
+</script>
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -19,10 +28,15 @@
               Users
             </nuxt-link>
           </li>
-          <li class="nav-item">
+          <li v-if="isAuth" class="nav-item">
             <nuxt-link active-class="active" class="nav-link" to="/login">
               Login
             </nuxt-link>
+          </li>
+          <li v-else class="nav-item">
+            <span class="nav-link" @click="onLogoutClick">
+              Logout
+            </span>
           </li>
         </ul>
       </div>

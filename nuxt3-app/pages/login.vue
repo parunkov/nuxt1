@@ -1,3 +1,11 @@
+<script setup>
+let isAuth = useState('isAuth');
+
+const onSubmit = () => {
+  isAuth = true;
+  console.log(isAuth);
+}
+</script>
 <template>
   <section>
     <form>
@@ -8,7 +16,7 @@
       <p>
         <nuxt-link to="/">To home page</nuxt-link>
       </p>
-      <buttun class="btn btn-primary" type="submit">Login</buttun>
+      <buttun class="btn btn-primary" type="button" @click="onSubmit">Login</buttun>
     </form>
   </section>
 </template>
