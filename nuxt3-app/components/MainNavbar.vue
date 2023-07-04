@@ -1,9 +1,7 @@
 <script setup>
 const isAuth = useAuth();
 const onLogoutClick = () => {
-  console.log(5555);
   isAuth.value = false;
-  console.log(isAuth.value);
 }
 </script>
 <template>

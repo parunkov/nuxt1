@@ -1,6 +1,7 @@
 <script setup>
-const isAuth = useAuth();
-console.log("🚀 ~ file: about.vue:3 ~ isAuth:", isAuth)
+definePageMeta({
+  middleware: ['auth']
+})
 </script>
 <template>
   <div>

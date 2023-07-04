@@ -3,7 +3,6 @@ const isAuth = useAuth();
 
 const onSubmit = () => {
   isAuth.value = true;
-  console.log(isAuth);
 }
 </script>
 <template>
