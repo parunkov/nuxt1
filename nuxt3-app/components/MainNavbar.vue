@@ -27,7 +27,7 @@ const onLogoutClick = () => {
               Users
             </nuxt-link>
           </li>
-          <li v-if="isAuth.value" class="nav-item">
+          <li v-if="!isAuth" class="nav-item">
             <nuxt-link active-class="active" class="nav-link" to="/login">
               Login
             </nuxt-link>
