@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NuxtLoadingIndicator />
     <MainNavbar />
     <main>
       <div class="container">

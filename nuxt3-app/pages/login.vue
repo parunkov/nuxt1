@@ -4,6 +4,9 @@ const isAuth = useAuth();
 const onSubmit = () => {
   isAuth.value = true;
 }
+definePageMeta({
+  layout: 'empty'
+})
 </script>
 <template>
   <section>
